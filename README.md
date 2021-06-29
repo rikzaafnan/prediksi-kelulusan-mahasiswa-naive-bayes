@@ -4,7 +4,7 @@ BE Stack :
 - struktur MVC
 - JWT Token
 - Go lang with Echo framework  
-- - ORM with GORM
+- ORM with GORM
 - MYSQL
 
 Backend Aplikasi Prediksi Kelulusan Mahasiswa dengan metode Naive Bayes. 
