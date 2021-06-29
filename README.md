@@ -3,7 +3,7 @@ Backend Aplikasi Prediksi kelulusan Mahasiswa dengan metode Naive Bayes
 BE Stack :
 - struktur MVC
 - JWT Token
-- Go lang with framework Gin gonic
+- Go lang with Echo framework  
 - ORM with GORM
 - MYSQL
 
