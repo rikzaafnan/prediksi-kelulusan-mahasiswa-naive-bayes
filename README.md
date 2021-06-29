@@ -1,2 +1,11 @@
-# prediksi-kelulusan-mahasiswa-naive-bayes
-Backend Applikasi Prediksi Kelulusan Mahasiswa dengan metode Naive Bayes. 
+Backend Aplikasi Prediksi kelulusan Mahasiswa dengan metode Naive Bayes
+
+BE Stack :
+- struktur MVC
+- JWT Token
+- Go lang with framework Gin gonic
+- ORM with GORM
+- MYSQL
+
+Backend Aplikasi Prediksi Kelulusan Mahasiswa dengan metode Naive Bayes. 
+Final Project of Alterra Academy backend Golang batch 2.
