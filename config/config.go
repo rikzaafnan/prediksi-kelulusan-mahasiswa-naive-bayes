@@ -20,5 +20,5 @@ func InitDB() {
 }
 
 func initMigrate() {
-	DB.AutoMigrate(&models.ProfileLulusan{})
+	DB.AutoMigrate(&models.ProfileLulusan{}, &models.User{})
 }
