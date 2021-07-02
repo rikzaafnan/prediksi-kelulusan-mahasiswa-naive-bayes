@@ -445,13 +445,16 @@ func PrediksiLulus(c echo.Context) error {
 			"jenis_kelamin":              jenisKelamin,
 			"status_mahasiswa":           statusMahasiswa,
 			"status_prediksi_kelulusan":  prediksiStatusKelulusan,
-			"status_prediksi_masa_studi": prediksiStatusKelulusan,
+			"status_prediksi_masa_studi": prediksiMasaStudi,
 		},
 	}
 
 	return c.JSON(http.StatusOK, map[string]interface{}{
-		"message":  "success",
-		"response": response,
+		"meta": map[string]interface{}{
+			"message": "success",
+			"code":    http.StatusOK,
+		},
+		"content": response,
 	})
 
 }
