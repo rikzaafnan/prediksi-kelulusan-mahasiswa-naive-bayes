@@ -6,6 +6,7 @@ import (
 	"prediksi-kelulusan-mahasiswa-naive-bayes/controller"
 	"prediksi-kelulusan-mahasiswa-naive-bayes/controller/profile_lulusan"
 	"prediksi-kelulusan-mahasiswa-naive-bayes/controller/user"
+	mid "prediksi-kelulusan-mahasiswa-naive-bayes/middleware"
 
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
@@ -21,7 +22,7 @@ func New() *echo.Echo {
 		return c.String(http.StatusOK, "api run teruss")
 	})
 
-	// middleware.LogMiddleware(e)
+	mid.LogMiddleware(e)
 	eRoute.POST("/login", user.Login)
 	eRoute.POST("/register", user.Register)
 	eRoute.POST("/prediksi-lulus", controller.PrediksiLulus)
